@@ -1,16 +1,18 @@
-for (let i = 0; i < nums.length; i++) {
-
-
-    if (nums[i] > first) {
-        second = first;
-        first = nums[i]
+function getSecondLargest(nums) {
+    let largest = nums[0];
+    let secondLargest = nums[0];
+    
+    for (let i = 1; i < nums.length; i++) {
+        if (nums[i] > largest) {
+            secondLargest = largest;
+            largest = nums[i];
+            continue;
+        }
+        
+        if ((nums[i] > secondLargest) && (nums[i] < largest)) {
+            secondLargest = nums[i];
+        }
     }
-
-    if (nums[i] > second && nums[i] < first) {
-        second = nums[i];
-    }
-}
-
-
-return second;
+    
+    return secondLargest;
 }
