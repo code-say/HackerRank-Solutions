@@ -35,6 +35,7 @@ function getGrade(score) {
     }else if(score > 0 && score <= 5){
         return("F");
     }
+ return grade;
 }
 
 
