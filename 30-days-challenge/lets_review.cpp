@@ -1,3 +1,14 @@
+Sample Input
+
+2
+Hacker
+Rank
+Sample Output
+
+Hce akr
+Rn ak
+
+
 #include <cmath>
 #include <cstdio>
 #include <vector>
